@@ -252,6 +252,7 @@
 	var deletionStage  = 0;
 	//localStorage.setItem("gameMaxProgress", 0);
 	//localStorage.getItem("gameMaxProgress");
+	//localStorage.setItem("MultipleChoice1State3", 0);
 	
 	function buttonPressed() {
 		const gameWindow = document.getElementById("GameWindow");
@@ -538,6 +539,17 @@
 		}
 	}
 
+	function loadSaveState(){
+		const bmco1 = document.getElementById("BtnMultipleChoiceOption1");
+		const bmco2 = document.getElementById("BtnMultipleChoiceOption2");
+		const bmco3 = document.getElementById("BtnMultipleChoiceOption3");
+		const bmco4 = document.getElementById("BtnMultipleChoiceOption4");
+		const slider = document.getElementById("SliderState2");
+		const output = document.getElementById("SliderState2ValueDisplay");
+
+		
+	}
+
 	function loadRecentPage() {
 		const gameWindow = document.getElementById("GameWindow");
 		const greenBackgroundWindow = document.getElementById("IntroductionWindow");
@@ -609,7 +621,7 @@
 			<a id="deletionConfirm" style="display: inline-flex; flex-direction: column;"class="btnKeyboard" onclick="btnOption(-1)">Spieledaten Löschen</a>
 		</div>
 
-		<div class="credit" id="two">© 2025 Schulprojekt „Rette die Affen“</div>
+		<div class="credit" id="two">VersionCode:18032026</div>
 	</section>
 	
 	<div class="popupWindow" id="GameWindow">
